@@ -3,13 +3,7 @@
 Adds the application to the share intent of the device, so it can be launched from other apps and receive data from them 
 
 
-### Preview
-<p float="left">
-<img src ="https://github.com/ajith-ab/react-native-file-share-intent/blob/master/assets/ios.png" />
-<img src ="https://github.com/ajith-ab/react-native-file-share-intent/blob/master/assets/ios_intent.png" />
-<img src ="https://github.com/ajith-ab/react-native-file-share-intent/blob/master/assets/android .png" />
-<img src ="https://github.com/ajith-ab/react-native-file-share-intent/blob/master/assets/android_intent.png" />
-</p>
+
 
 ## Installation
 
@@ -132,6 +126,13 @@ AppRegistry.registerComponent('Share', () => Share);
 
 Or check the "example" directory for an example application.
 
+### Preview
+<p float="left">
+<img src ="https://github.com/ajith-ab/react-native-file-share-intent/blob/master/assets/ios.png" />
+<img src ="https://github.com/ajith-ab/react-native-file-share-intent/blob/master/assets/ios_intent.png" />
+<img src ="https://github.com/ajith-ab/react-native-file-share-intent/blob/master/assets/android .png" />
+<img src ="https://github.com/ajith-ab/react-native-file-share-intent/blob/master/assets/android_intent.png" />
+</p>
 
 ## Credits
 
