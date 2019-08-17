@@ -151,7 +151,7 @@ self.view.transform = CGAffineTransformIdentity;
 - Select Share Extension folder in side Menu `info.plist` and add below code
 
 <p align="center">
-<img src ="https://github.com/ajith-ab/react-native-file-share-intent/blob/master/assets/ios_step_12.png" />
+<img src ="https://github.com/ajith-ab/react-native-file-share-intent/blob/master/assets/ios_setup_12.png" />
 </p>
 
 ```
