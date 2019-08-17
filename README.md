@@ -26,6 +26,8 @@ react-native link
 - <a href="https://github.com/ajith-ab/react-native-file-share-intent/tree/master/android">Android</a>   
 
 
+
+
 ## Example
 
 ### For Android
@@ -126,10 +128,15 @@ AppRegistry.registerComponent('Share', () => Share);
 
 Or check the "example" directory for an example application.
 
-### Preview
+## Preview
+
+### IOS
 <p float="left">
+
 <img src ="https://github.com/ajith-ab/react-native-file-share-intent/blob/master/assets/ios.png" />
 <img src ="https://github.com/ajith-ab/react-native-file-share-intent/blob/master/assets/ios_intent.png" />
+
+### Android
 <img src ="https://github.com/ajith-ab/react-native-file-share-intent/blob/master/assets/android .png" />
 <img src ="https://github.com/ajith-ab/react-native-file-share-intent/blob/master/assets/android_intent.png" />
 </p>
