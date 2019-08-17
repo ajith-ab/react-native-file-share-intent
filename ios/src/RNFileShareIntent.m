@@ -101,7 +101,7 @@ RCT_EXPORT_METHOD(openURL:(NSString *)url) {
 }
 
 
-RCT_EXPORT_METHOD(invokeToTheHostApp)
+RCT_EXPORT_METHOD(close)
 {
     
     [ extContext completeRequestReturningItems: @[] completionHandler: nil ];

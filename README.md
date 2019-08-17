@@ -13,12 +13,15 @@ npm i --save react-native-file-share-intent
 
 ### Automatic Installation (React Native 0.36 - 0.59.9)
 
-At the command line, in the project directory:
+At the command line, in the project directory: only For `Android` and in `ios` use Manual installation
 
 ```bash
 react-native link
 ```
 
+### Manual Installation
+- <a href="https://github.com/ajith-ab/react-native-file-share-intent/tree/master/ios">IOS</a> 
+- <a href="https://github.com/ajith-ab/react-native-file-share-intent/tree/master/android">Android</a>   
 
 
 ## Example
