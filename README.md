@@ -7,7 +7,7 @@ Adds the application to the share intent of the device, so it can be launched fr
 <p float="left">
 <img src ="https://github.com/ajith-ab/react-native-file-share-intent/blob/master/assets/ios.png" />
 <img src ="https://github.com/ajith-ab/react-native-file-share-intent/blob/master/assets/ios_intent.png" />
-<img src ="https://github.com/ajith-ab/react-native-file-share-intent/blob/master/assets/android.png" />
+<img src ="https://github.com/ajith-ab/react-native-file-share-intent/blob/master/assets/android .png" />
 <img src ="https://github.com/ajith-ab/react-native-file-share-intent/blob/master/assets/android_intent.png" />
 </p>
 
