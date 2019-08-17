@@ -103,7 +103,7 @@ self.view.transform = CGAffineTransformIdentity;
 <img src ="https://github.com/ajith-ab/react-native-file-share-intent/blob/master/assets/ios_step_05.png" />
 </p>
 
-- Now we need to tell the share extension that we want to read new header files. Click on project name (in my case `Sample1`), then click on your extension name (in my case `MyShareEx`). After that click on Build Settings and search for `Header Search Paths`
+- Now we need to tell the share extension that we want to read new header files. Click on project name (in my case `Example`), then click on your extension name (in my case `Share Intent`). After that click on Build Settings and search for `Header Search Paths`
 
 <p align="center">
 <img src ="https://github.com/ajith-ab/react-native-file-share-intent/blob/master/assets/ios_step_06.png" />
@@ -124,17 +124,17 @@ self.view.transform = CGAffineTransformIdentity;
 - We also need to add all the static libraries such as `React` and `React Native File Share Intent`. Select the `General` tab and under `Linked frameworks and Libraries` click on `+` and add all of the selected static binaries there
 
 <p align="center">
-<img src ="https://raw.githubusercontent.com/alinz/react-native-share-extension/master/assets/ios_step_08.png" />
+<img src ="https://github.com/ajith-ab/react-native-file-share-intent/blob/master/assets/ios_step_08.png" />
 </p>
 
 - select from top menu `Products` > `Schemes` > `Edit Schemes` > `Build` click on `+` and add `React`
 
 <p align="center">
-<img src ="https://raw.githubusercontent.com/alinz/react-native-share-extension/master/assets/ios_step_10.png" />
+<img src ="https://github.com/ajith-ab/react-native-file-share-intent/blob/master/assets/ios_step_10.png" />
 </p>
 
 - Select the `Build Phases` tab and under `Target Dependencies` click on `+` and add React
 
 <p align="center">
-<img src ="https://raw.githubusercontent.com/alinz/react-native-share-extension/master/assets/ios_step_11.png" />
+<img src ="https://github.com/ajith-ab/react-native-file-share-intent/blob/master/assets/ios_step_11.png" />
 </p>
