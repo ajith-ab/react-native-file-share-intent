@@ -228,6 +228,116 @@ AppRegistry.registerComponent('Share', () => Share);
 
 Or check the "example" directory for an example application.
 
+### Donate
+
+<p><a href="https://www.paypal.me/ajithab" rel="nofollow"><img height="75" src="https://raw.githubusercontent.com/stefan-niedermann/paypal-donate-button/master/paypal-donate-button.png" style="max-width:100%;"></a></p>
+
+
+## Communication Between Main App and Share Extension 
+
+- create a Same App group For `Main App` and `Share Extension` through Select the Main App or Share Extension and Select `Capablities tab`  then select App group `create group with same name`
+
+<p align="center">
+<img src ="https://github.com/ajith-ab/react-native-file-share-intent/blob/master/assets/appgroup.png" />
+</p>
+
+ ###  Message Communication 
+   
+  ```bash
+  npm install --save react-native-swiss-knife
+  ```
+  
+ - To save a value on your main app:
+ 
+ ```Javascript
+import { RNSKBucket } from 'react-native-swiss-knife'
+
+const myGroup = 'group.groupName'
+RNSKBucket.set('test', 'myValue', myGroup)
+ ```
+ 
+ - and then, to read the saved data on your shared extension:
+ 
+ ```Javascript
+import { RNSKBucket } from 'react-native-swiss-knife'
+
+const myGroup = 'group.groupName'
+RNSKBucket.get('test', myGroup).then( (value) => console.log(value) ) // myValue
+```
+
+### Manage Files
+
+- Use  <a href="https://www.npmjs.com/package/react-native-fs">  react-native-fs</a>
+
+- In Share Extension
+
+```Javascript
+
+import * as RNFS from 'react-native-fs';
+
+var path = RNFS.pathForGroup('group.groupName');
+path = path+'filename.txt'; // according to files use .jpeg, .pdf etc ...
+RNFS.copyFile(url, path) // url-> path getting From Share Extension, path -> copying Location
+    .then((success) => {
+      
+    })
+    .catch((err) => {
+      console.log("Error: " + err.message);
+    });
+```
+- In Main App
+
+```Javascript
+
+import * as RNFS from 'react-native-fs';
+
+var path = RNFS.pathForGroup('group.groupName');
+RNFS.readDir(path) 
+  .then((result) => {
+    console.log('GOT RESULT', result);
+ 
+    // stat the first file
+    return Promise.all([RNFS.stat(result[0].path), result[0].path]);
+  })
+  .then((statResult) => {
+    if (statResult[0].isFile()) {
+      // if we have a file, read it
+      return RNFS.readFile(statResult[1], 'utf8');
+    }
+ 
+    return 'no file';
+  })
+  .then((contents) => {
+    // log the file contents
+    console.log(contents);
+  })
+  .catch((err) => {
+    console.log(err.message, err.code);
+  });
+```
+### Opening Share Extension in Main App
+
+- In Share Extension
+
+```javascript
+import RNFileShareIntent from 'react-native-file-share-intent';
+
+RNFileShareIntent.openURL(url)
+
+```
+- In Main App 
+
+ Refer <a href="https://medium.com/react-native-training/deep-linking-your-react-native-app-d87c39a1ad5e"> Linking</a>
+
+```javascript
+import { Linking } from 'react-native';
+
+ Linking.getInitialURL().then((url) => {
+    if (url) {
+      console.log('Initial url is: ' + url);
+    }
+  }).catch(err => console.error('An error occurred', err));
+```
 
 ## Credits
 

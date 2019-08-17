@@ -69,6 +69,12 @@ public class MainApplication extends Application implements ReactApplication {
 }
 ```
 
+### Donate
+
+<p><a href="https://www.paypal.me/ajithab" rel="nofollow"><img height="75" src="https://raw.githubusercontent.com/stefan-niedermann/paypal-donate-button/master/paypal-donate-button.png" style="max-width:100%;"></a></p>
+
+
+
 ## Example
 
 

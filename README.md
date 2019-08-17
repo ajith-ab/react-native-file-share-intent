@@ -136,18 +136,18 @@ Or check the "example" directory for an example application.
 ### IOS
 <p float="left">
 
-<img src ="https://github.com/ajith-ab/react-native-file-share-intent/blob/master/assets/ios.png" />
-<img src ="https://github.com/ajith-ab/react-native-file-share-intent/blob/master/assets/ios_intent.png" />
+<img src ="https://raw.githubusercontent.com/ajith-ab/react-native-file-share-intent/master/assets/ios.png" />
+<img src ="https://raw.githubusercontent.com/ajith-ab/react-native-file-share-intent/master/assets/ios_intent.png" />
 </p>
 
 ### Android
 
 <p float="left">
 
-<img src ="https://github.com/ajith-ab/react-native-file-share-intent/blob/master/assets/android .png" />
-<img src ="https://github.com/ajith-ab/react-native-file-share-intent/blob/master/assets/android_intent.png" />
+<img src ="https://raw.githubusercontent.com/ajith-ab/react-native-file-share-intent/master/assets/android .png" />
+<img src ="https://raw.githubusercontent.com/ajith-ab/react-native-file-share-intent/master/assets/android_intent.png" />
 </p>
 
 ## Credits
 
-Sponsored and developed by Ajith A B
+Sponsored and developed by <a href="http://ajithab.com">Ajith A B</a>
