@@ -135,8 +135,12 @@ Or check the "example" directory for an example application.
 
 <img src ="https://github.com/ajith-ab/react-native-file-share-intent/blob/master/assets/ios.png" />
 <img src ="https://github.com/ajith-ab/react-native-file-share-intent/blob/master/assets/ios_intent.png" />
+</p>
 
 ### Android
+
+<p float="left">
+
 <img src ="https://github.com/ajith-ab/react-native-file-share-intent/blob/master/assets/android .png" />
 <img src ="https://github.com/ajith-ab/react-native-file-share-intent/blob/master/assets/android_intent.png" />
 </p>
