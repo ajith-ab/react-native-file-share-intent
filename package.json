@@ -1,22 +1,26 @@
 {
   "name": "react-native-file-share-intent",
-  "description": "Adds the app to share menu, so it can be launched from share menu and receive files url or data from other apps",
-  "version": "1.0.0",
+  "version": "1.0.8",
+  "description": "Adds the app to share menu, so it can be launched from share menu and receive data from other apps",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ajith-ab/react-native-file-share-intent.git"
   },
   "keywords": [
-    "react-component",
-    "react-native",
-    "android",
     "ios",
-    "share"
+    "android",
+    "react-native",
+    "share",
+    "extension"
   ],
-  "author": {
-    "name": "Ajith A B",
-    "email": "ajith4ab@gmail.com"
+  "author": "Ajith A B",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ajith-ab/react-native-file-share-intent/issues"
   },
-  "license": "MIT",
-  "readmeFilename": "README.md"
+  "homepage": "https://github.com/ajith-ab/react-native-file-share-intent#readme"
 }

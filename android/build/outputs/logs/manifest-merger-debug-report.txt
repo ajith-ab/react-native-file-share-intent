@@ -1,0 +1,37 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/ajithab/Desktop/Example/node_modules/react-native-file-share-intent/android/src/main/AndroidManifest.xml:2:1-5:12
+INJECTED from /Users/ajithab/Desktop/Example/node_modules/react-native-file-share-intent/android/src/main/AndroidManifest.xml:2:1-5:12
+INJECTED from /Users/ajithab/Desktop/Example/node_modules/react-native-file-share-intent/android/src/main/AndroidManifest.xml:2:1-5:12
+INJECTED from /Users/ajithab/Desktop/Example/node_modules/react-native-file-share-intent/android/src/main/AndroidManifest.xml:2:1-5:12
+INJECTED from /Users/ajithab/Desktop/Example/node_modules/react-native-file-share-intent/android/src/main/AndroidManifest.xml:2:1-5:12
+INJECTED from /Users/ajithab/Desktop/Example/node_modules/react-native-file-share-intent/android/src/main/AndroidManifest.xml:2:1-5:12
+INJECTED from /Users/ajithab/Desktop/Example/node_modules/react-native-file-share-intent/android/src/main/AndroidManifest.xml:2:1-5:12
+	package
+		ADDED from /Users/ajithab/Desktop/Example/node_modules/react-native-file-share-intent/android/src/main/AndroidManifest.xml:3:11-32
+		INJECTED from /Users/ajithab/Desktop/Example/node_modules/react-native-file-share-intent/android/src/main/AndroidManifest.xml
+		INJECTED from /Users/ajithab/Desktop/Example/node_modules/react-native-file-share-intent/android/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/ajithab/Desktop/Example/node_modules/react-native-file-share-intent/android/src/main/AndroidManifest.xml
+		ADDED from /Users/ajithab/Desktop/Example/node_modules/react-native-file-share-intent/android/src/main/AndroidManifest.xml:2:1-5:12
+		INJECTED from /Users/ajithab/Desktop/Example/node_modules/react-native-file-share-intent/android/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/ajithab/Desktop/Example/node_modules/react-native-file-share-intent/android/src/main/AndroidManifest.xml
+		ADDED from /Users/ajithab/Desktop/Example/node_modules/react-native-file-share-intent/android/src/main/AndroidManifest.xml:2:1-5:12
+		INJECTED from /Users/ajithab/Desktop/Example/node_modules/react-native-file-share-intent/android/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/ajithab/Desktop/Example/node_modules/react-native-file-share-intent/android/src/main/AndroidManifest.xml:2:11-69
+uses-sdk
+INJECTED from /Users/ajithab/Desktop/Example/node_modules/react-native-file-share-intent/android/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/ajithab/Desktop/Example/node_modules/react-native-file-share-intent/android/src/main/AndroidManifest.xml
+INJECTED from /Users/ajithab/Desktop/Example/node_modules/react-native-file-share-intent/android/src/main/AndroidManifest.xml
+INJECTED from /Users/ajithab/Desktop/Example/node_modules/react-native-file-share-intent/android/src/main/AndroidManifest.xml
+INJECTED from /Users/ajithab/Desktop/Example/node_modules/react-native-file-share-intent/android/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/ajithab/Desktop/Example/node_modules/react-native-file-share-intent/android/src/main/AndroidManifest.xml
+		ADDED from /Users/ajithab/Desktop/Example/node_modules/react-native-file-share-intent/android/src/main/AndroidManifest.xml
+		INJECTED from /Users/ajithab/Desktop/Example/node_modules/react-native-file-share-intent/android/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/ajithab/Desktop/Example/node_modules/react-native-file-share-intent/android/src/main/AndroidManifest.xml
+		ADDED from /Users/ajithab/Desktop/Example/node_modules/react-native-file-share-intent/android/src/main/AndroidManifest.xml
+		INJECTED from /Users/ajithab/Desktop/Example/node_modules/react-native-file-share-intent/android/src/main/AndroidManifest.xml
