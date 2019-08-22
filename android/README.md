@@ -38,7 +38,7 @@ Add What ever Want to share MIME Type so only include you want to share your App
 ```xml
 <activity
   ...
-  android:documentLaunchMode="never">
+  android:documentLaunchMode="singleTask">
   ...
   <intent-filter>
     <action android:name="android.intent.action.SEND" />
