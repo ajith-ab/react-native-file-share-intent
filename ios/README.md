@@ -73,7 +73,13 @@ NSItemProvider *itemProvider = item.attachments.firstObject;
 [RNFileShareIntent setShareFileIntentModule_itemProvider:itemProvider];
 [RNFileShareIntent setContext: self.extensionContext];
 
+
+#if DEBUG
 jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"Share" fallbackResource:nil];
+#else
+jsCodeLocation = [[NSBundle mainBundle] URLForResource:@"share" withExtension:@"jsbundle"];
+#endif
+
 
 RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
 moduleName:@"Share"
@@ -227,6 +233,17 @@ AppRegistry.registerComponent('Share', () => Share);
 
 
 Or check the "example" directory for an example application.
+
+### For Ios Release
+
+- run command in the root folder
+
+```bash
+react-native bundle --entry-file share.js --platform ios --dev false --bundle-output ios/share.jsbundle --assets-dest ios
+```
+
+then open Xcode and  from side menu select the folder of  `share extension` and right-click the folder you will get a menu to `add files` then you will select the  `share.jsbundle`  from your ios folder 
+
 
 ### Donate
 
