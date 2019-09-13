@@ -77,7 +77,8 @@ NSItemProvider *itemProvider = item.attachments.firstObject;
 #if DEBUG
 jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"Share" fallbackResource:nil];
 #else
-jsCodeLocation = [[NSBundle mainBundle] URLForResource:@"share" withExtension:@"jsbundle"];
+jsCodeLocation = [NSURL URLWithString:@"http://localhost:8081/share.bundle?platform=ios&dev=true"]; 
+// Change localhost to your network Ip for your Device Debugging
 #endif
 
 
