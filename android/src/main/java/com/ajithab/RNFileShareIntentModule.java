@@ -29,18 +29,18 @@ public class RNFileShareIntentModule extends ReactContextBaseJavaModule {
 
   protected void onNewIntent(Intent intent) {
     Activity mActivity = getCurrentActivity();
-    
+
     if(mActivity == null) { return; }
 
     mActivity.setIntent(intent);
-  }  
+  }
 
   @ReactMethod
   public void getFilepath(Callback successCallback) {
     Activity mActivity = getCurrentActivity();
-    
+
     if(mActivity == null) { return; }
-    
+
     Intent intent = mActivity.getIntent();
     String action = intent.getAction();
     String type = intent.getType();
@@ -48,13 +48,13 @@ public class RNFileShareIntentModule extends ReactContextBaseJavaModule {
     if (Intent.ACTION_SEND.equals(action) && type != null) {
       if ("text/plain".equals(type)) {
         String input = intent.getStringExtra(Intent.EXTRA_TEXT);
-        successCallback.invoke(input);
+        successCallback.invoke(input, type);
       } else if (type.startsWith("image/") || type.startsWith("video/") || type.startsWith("application/")) {
         Uri fileUri = (Uri) intent.getParcelableExtra(Intent.EXTRA_STREAM);
         if (fileUri != null) {
-          successCallback.invoke(fileUri.toString());
+          successCallback.invoke(fileUri.toString(), type);
         }
-      }else {
+      } else {
         Toast.makeText(reactContext, "Type is not support", Toast.LENGTH_SHORT).show();
       }
     } else if (Intent.ACTION_SEND_MULTIPLE.equals(action) && type != null) {
@@ -65,7 +65,7 @@ public class RNFileShareIntentModule extends ReactContextBaseJavaModule {
             for (Uri uri: fileUris) {
               completeString += uri.toString() + ",";
             }
-            successCallback.invoke(completeString);
+            successCallback.invoke(completeString, type);
           }
         } else {
           Toast.makeText(reactContext, "Type is not support", Toast.LENGTH_SHORT).show();
@@ -76,7 +76,7 @@ public class RNFileShareIntentModule extends ReactContextBaseJavaModule {
   @ReactMethod
   public void clearFilePath() {
     Activity mActivity = getCurrentActivity();
-    
+
     if(mActivity == null) { return; }
 
     Intent intent = mActivity.getIntent();
