@@ -47,6 +47,15 @@ Add What ever Want to share MIME Type so only include you want to share your App
     <data android:mimeType="image/*" /> 
     <data android:mimeType="application/*" />
   </intent-filter>
+  <intent-filter>
+    <action android:name="android.intent.action.SEND_MULTIPLE"/>
+    <category android:name="android.intent.category.DEFAULT" />
+    <data android:mimeType="image/*" />
+    <data android:mimeType="video/*" />
+    <data android:mimeType="audio/*" />
+    <data android:mimeType="application/*" />
+    <data android:mimeType="*/*" />
+  </intent-filter>
 </activity>
 ```
 
