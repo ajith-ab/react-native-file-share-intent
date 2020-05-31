@@ -1,3 +1,22 @@
+# :warning: This Repository Has been changed
+
+### new package :-  [react-native-receive-sharing-intent](https://www.npmjs.com/package/react-native-receive-sharing-intent)
+
+:star: :star: :star: :star: 
+
+
+## Demo
+ 
+ - React Native > 0.60 Support
+ - Easy implimentation 
+ - Ios Directly Open Host app
+ - Multiple Files Share Both ios and Android
+
+| Android | Ios | 
+| :---: | :---: | 
+| ![android text](https://raw.githubusercontent.com/ajith-ab/react-native-receive-sharing-intent/master/doc/android.gif) | ![android text](https://raw.githubusercontent.com/ajith-ab/react-native-receive-sharing-intent/master/doc/ios.gif) |
+
+
 # react-native-file-share-intent
 
 Adds the application to the share intent of the device, so it can be launched from other apps and receive data from them 
