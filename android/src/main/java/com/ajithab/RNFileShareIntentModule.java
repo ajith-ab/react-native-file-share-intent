@@ -49,7 +49,7 @@ public class RNFileShareIntentModule extends ReactContextBaseJavaModule {
       if ("text/plain".equals(type)) {
         String input = intent.getStringExtra(Intent.EXTRA_TEXT);
         successCallback.invoke(input);
-      } else if (type.startsWith("image/") || type.startsWith("video/") || type.startsWith("application/")) {
+      } else if (type.startsWith("image/") || type.startsWith("video/") || type.startsWith("application/") || type.startsWith("audio/")) {
         Uri fileUri = (Uri) intent.getParcelableExtra(Intent.EXTRA_STREAM);
         if (fileUri != null) {
           successCallback.invoke(fileUri.toString());
@@ -58,7 +58,7 @@ public class RNFileShareIntentModule extends ReactContextBaseJavaModule {
         Toast.makeText(reactContext, "Type is not support", Toast.LENGTH_SHORT).show();
       }
     } else if (Intent.ACTION_SEND_MULTIPLE.equals(action) && type != null) {
-        if (type.startsWith("image/") || type.startsWith("video/") || type.startsWith("application/")) {
+        if (type.startsWith("image/") || type.startsWith("video/") || type.startsWith("application/") || type.startsWith("*/") || type.startsWith("audio/")) {
           ArrayList<Uri> fileUris = intent.getParcelableArrayListExtra(Intent.EXTRA_STREAM);
           if (fileUris != null) {
             String completeString = new String();
